@@ -41,7 +41,9 @@ export const getUserCart = async (req: Request | any, res: Response) => {
     const cartItems = await CartModel.find({ userId }).populate("productId");
 
     if (!cartItems.length) {
-      return res.status(404).json({ message: "Cart is empty", success: false });
+      return res
+        .status(404)
+        .json({ message: "Cart is empty", success: false, products: [] });
     }
 
     res.status(200).json({ products: cartItems, success: true });
@@ -113,7 +115,7 @@ export const getOrders = async (req: Request | any, res: Response) => {
     if (!orders.length) {
       return res
         .status(404)
-        .json({ message: "No orders found", success: false });
+        .json({ message: "No orders found", success: false, orders: [] });
     }
 
     res.status(200).json({ orders, success: true });

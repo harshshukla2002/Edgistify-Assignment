@@ -22,7 +22,7 @@ productRouter.post("/placeorder", protect, (req: Request, res: Response) => {
 productRouter.get("/order", protect, (req: Request, res: Response) => {
   getOrders(req, res);
 });
-productRouter.get("/", protect, (req: Request, res: Response) => {
+productRouter.get("/", (req: Request, res: Response) => {
   getProducts(req, res);
 });
 

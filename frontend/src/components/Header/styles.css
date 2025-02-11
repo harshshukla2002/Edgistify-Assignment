@@ -1,0 +1,11 @@
+.active {
+  border-bottom: 2px solid blue;
+}
+
+.header-text {
+  cursor: pointer;
+}
+
+.header-text:hover {
+  border-bottom: 2px solid blue;
+}

@@ -9,7 +9,7 @@ const protect = (req: any, res: any, next: any) => {
     (req as any).user = decoded;
     next();
   } catch (error) {
-    res.status(401).json({ message: "Invalid Token" });
+    res.status(401).json({ message: "Unauthorized" });
   }
 };
 

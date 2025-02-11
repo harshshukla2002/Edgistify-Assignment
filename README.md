@@ -33,14 +33,6 @@ ecommerce-app/
 │  │  ├─ index.tsx
 ```
 
-## Video Walkthrough of the Project
-
-[Project Walkthrough Video](https://video-link.com)
-
-## Video Walkthrough of the Codebase
-
-[Codebase Walkthrough Video](https://video-link.com)
-
 ## Features
 
 - User Authentication (Signup/Login)

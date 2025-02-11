@@ -82,7 +82,7 @@ Once the application is running, users can browse products, add them to the cart
 
 ```bash
 # Example: Add Product to Cart
-POST /api/cart
+POST /api/product/addtocart
 Headers: { "Authorization": "Bearer token" }
 Body: { "productId": "67ab080267f903dd8e5a4d2b", "quantity": 1 }
 ```

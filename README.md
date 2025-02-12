@@ -33,6 +33,12 @@ ecommerce-app/
 │  │  ├─ index.tsx
 ```
 
+## Video Walkthrough of the Project
+https://github.com/user-attachments/assets/dfc186d8-daf3-4dd6-bdd5-9019c6b85790
+
+## Video Walkthrough of the Codebase
+https://github.com/user-attachments/assets/2de98b1b-5d35-47ea-8dcb-13aaa5a09fc2
+
 ## Features
 
 - User Authentication (Signup/Login)

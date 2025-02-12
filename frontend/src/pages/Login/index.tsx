@@ -125,7 +125,7 @@ const Login = () => {
         </Card.Footer>
         <Card.Description textAlign={"center"} marginBottom={"20px"}>
           don't have a account ?{" "}
-          <span className="link-text" onClick={() => navigate("/login")}>
+          <span className="link-text" onClick={() => navigate("/signup")}>
             signup
           </span>
         </Card.Description>

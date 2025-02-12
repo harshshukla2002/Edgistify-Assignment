@@ -39,13 +39,9 @@ const Order = () => {
   };
 
   useEffect(() => {
-    if (!orders) {
-      getOrder();
-    }
+    getOrder();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
-  console.log(orders);
 
   return (
     <Box>

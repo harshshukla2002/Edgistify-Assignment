@@ -76,6 +76,7 @@ const Cart = () => {
         title: message,
         type: "success",
       });
+      dispatch(setCartData(null));
       navigate("/place-order");
     } catch (error: any) {
       console.error(error.response.data.message || error);
@@ -87,9 +88,7 @@ const Cart = () => {
   };
 
   useEffect(() => {
-    if (!cartData) {
-      getCartData();
-    }
+    getCartData();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

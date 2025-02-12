@@ -104,7 +104,7 @@ const Cart = () => {
   }, [cartData]);
 
   return (
-    <Box>
+    <Box mb={20}>
       <Header />
       {isLoading && (
         <Box
@@ -153,7 +153,7 @@ const Cart = () => {
           margin={"auto"}
           marginTop={"5%"}
         >
-          <Text>Total Price: {totalPrice}</Text>
+          <Text>Total Price: ${totalPrice.toFixed(2)}</Text>
           <Box>
             <Input
               placeholder="enter shipping address"
